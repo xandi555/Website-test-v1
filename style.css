@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	Website v2
+	Ortner Alexander Portfolio
 	About: A shiny new Blocs website.
 	Author: Xandi Ortner
 	Version: 1.0
@@ -177,6 +177,22 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	background:rgba(0,0,0,.3);
 }
 
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.a-block{
+	width:100%;
+	text-align:left;
+	display: inline-block;
+}
+.text-center .a-block{
+	text-align:center;
+}
 
 
 
@@ -217,6 +233,18 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 }
 
 
+.carousel-nav-icon{
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2px;
+	fill-rule: evenodd;
+	stroke-linecap:round;
+}
+
+.carousel-indicators li::marker{
+	font-size:0;
+}
+
 
 /* ScrollToTop button */
 
@@ -244,116 +272,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	stroke-linecap:round;
 }
 
-/* Horizontal Scroll Container */
-.blocs-horizontal-scroll-container{
-	position:relative;
-}
-.blocs-horizontal-scroll-area{
-	display:flex;
-	overflow-x:auto;
-	align-items:flex-start;
-	gap:20px;
-	scrollbar-width: none;
-	-ms-overflow-style: none;
-}
-.blocs-horizontal-scroll-area > *{
-	flex-shrink:0;
-	max-width:100%;
-}
-.blocs-horizontal-scroll-area::-webkit-scrollbar{
-	display:none;
-}
-.blocs-horizontal-scroll-control{
-	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
-	z-index:1;
-	display:flex;
-	text-align:center;
-	border:0;
-	margin:0 30px;
-}
-.blocs-scroll-control-next{
-	right:0;
-}
-.blocs-round-btn{
-	background:rgba(0,0,0,0.15);
-	border-radius:100%;
-	padding:12px;
-	opacity:0;
-	cursor:pointer;
-	transform:scale(0.5);
-	backdrop-filter:blur(20px);
-	-webkit-backdrop-filter:blur(20px);
-	transition:opacity .50s ease,transform .50s ease;
-}
-.blocs-horizontal-scroll-container:hover .blocs-round-btn,.blocs-horizontal-scroll-container.show-controls .blocs-round-btn{
-	opacity:1;
-	transform:scale(1.0);
-}
-.blocs-round-btn:active{
-	background:rgba(0,0,0,0.3);
-	transform:scale(0.9)!important;
-	transition:transform .30s ease,background .50s ease;
-}
-.compact-blocs-controls .blocs-round-btn{
-	padding:2px;
-	width:30px;
-	height: 30px;
-}
-.compact-blocs-controls .blocs-round-btn svg{
-	width:14px;
-	height:14px;
-}
-.compact-blocs-controls .blocs-horizontal-scroll-control{
-	margin:0 20px;
-}
-.horizontal-scroll-icon{
-	fill:none;
-	stroke:#fff;
-	stroke-width:4px;
-	fill-rule:evenodd;
-	stroke-linecap:round;
-}
-.hide-left-control > .blocs-scroll-control-prev, .hide-right-control > .blocs-scroll-control-next{
-	opacity:0!important;
-	pointer-events: none;
-	transition:opacity .50s ease;
-}
-.show-controls:not(.hide-left-control) > .blocs-scroll-control-prev, .show-controls:not(.hide-right-control) > .blocs-scroll-control-next{
-	opacity:1!important;
-}
-.show-controls.hide-left-control > .blocs-scroll-control-prev, .show-controls.hide-right-control > .blocs-scroll-control-next{
-	opacity:0.4!important;
-}
-.blocs-horizontal-scroll-area img.lazyload{
-	height:0;
-}
-.horizontal-scroll-v-t .blocs-horizontal-scroll-control{
-	top:-40px;
-}
-.horizontal-scroll-v-b .blocs-horizontal-scroll-control{
-	top:100%;
-}
-.horizontal-scroll-h-c .blocs-scroll-control-next{
-	left:50%;
-}
-.horizontal-scroll-h-c .blocs-scroll-control-prev{
-	right:50%;
-}
-.horizontal-scroll-h-l .blocs-scroll-control-next{
-	left:60px;
-}
-.horizontal-scroll-h-l.compact-blocs-controls .blocs-scroll-control-next{
-	left:40px;
-}
-.horizontal-scroll-h-r .blocs-scroll-control-prev{
-	right:60px;
-}
-.horizontal-scroll-h-r.compact-blocs-controls .blocs-scroll-control-prev{
-	right:40px;
-}
-
 /* = Custom Styling
 -------------------------------------------------------------- */
 
@@ -369,48 +287,91 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	padding-bottom:32px;
 	font-weight:bold;
 }
-.link-bloc-0-style{
-	font-family:"CourierPrime-Bold";
-}
-.menu-icon-stroke{
-	stroke:#000000!important;
-	fill:#000000!important;
-}
 .navbar-logo{
 	text-transform:none;
 	text-decoration:none;
 	font-size:20px;
 }
-.row-style{
-	width:100%;
-}
 .img-style{
 	border-radius:0px 0px 0px 0px;
-	height:355px;
-	width:150px;
+	height:500px;
+	width:400px;
 }
 .p-style{
 	font-size:11px;
+	width:56.91%;
 }
 .img-xandi-portrait-style{
 	height:500px;
 	width:250px;
 }
-.img-2-style{
-	height:200px;
-	width:1000px;
+.img-margin-right{
+	width:50px;
+	height:350px;
 }
-.img-3-style{
-	width:425px;
+.carousel-control-prev{
+	color:var(--swatch-var-6412)!important;
+	border-color:#5413D6!important;
+	border-width:0px 0px 0px 0px;
+	border-radius:0px 0px 0px 0px;
+	margin:20px 20px 20px 20px;
+	width:60px;
+	background-color:var(--swatch-var-1860);
 }
-.h1-style{
-	width:55.92%;
+.carousel-control-next{
+	background-color:var(--swatch-var-1860);
+	width:60px;
+	margin:20px 20px 20px 20px;
+	color:#ED0F0F!important;
+	text-align:left;
+	text-transform:uppercase;
+	text-decoration:underline!important;
 }
-.h3-style{
-	width:44.47%;
+.header1{
+	padding-bottom:40px;
+	padding-top:100px;
 }
-.blocs-card-width{
-	width:25%;
+.carouselcontainer{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.column1{
+	padding-left:50px;
+	padding-right:50px;
+}
+.overlay{
+	align-content:space-around;
+	flex-wrap:wrap-reverse;
+	justify-content:flex-start;
+	flex-direction:row;
+}
+.p-bloc-1-style{
+	font-size:14px;
+}
+.container-shorty{
+	padding-top:20px;
+	padding-bottom:30px;
+}
+.h4-style{
+	font-size:12px;
+}
+.slim-row{
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:166px;
+	padding-right:166px;
+}
+.container-slim{
+	margin-right:200px;
+	padding-left:200px;
+	padding-right:200px;
+	margin-left:200px;
+}
+.img-uf-axo-style{
+	width:633px;
+}
+.img-bloc-6-style{
+	height:400px;
 }
 
 /* = Colour
@@ -420,6 +381,24 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 :root{
 	
 	--swatch-var-2869:#000000;
+	
+	--swatch-var-1860:rgba(0,0,0,0.24);
+	
+	--swatch-var-6412:rgba(242,0,24,1.00);
+	
+	--swatch-var-566:rgba(220,9,9,1.00);
+	
+	--swatch-var-5141:rgba(200,200,200,1.00);
+	
+	--swatch-var-4169:rgba(100,100,100,1.00);
+	
+	--swatch-var-654:rgba(200,100,100,1.00);
+	
+	--swatch-var-159:rgba(0,0,0,1.00);
+	
+	--swatch-var-6474:rgba(100,0,0,1.00);
+	
+	--swatch-var-3881:rgba(200,100,200,1.00);
 	
 }
 
@@ -431,6 +410,49 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	color:var(--swatch-var-2869)!important;
 }
 
+/* Bloc image backgrounds */
+
+
+
+/* = Additional CSS
+-------------------------------------------------------------- */
+.slice-container {
+  display: flex;
+  justify-content: center;  /* zentriert die Slices horizontal */
+  gap: 10px;                /* Abstand zwischen den Slices */
+}
+
+.slice {
+  position: relative;       /* wichtig für Overlay */
+  height: 350px;            /* feste Höhe */
+  width: 50px;              /* Startbreite = Schlitz */
+  overflow: hidden;         /* Maske */
+  transition: width 0.3s ease;
+  cursor: pointer;
+  flex-shrink: 0;           /* verhindert, dass die Slices sich zusammendrücken */
+}
+
+.slice img {
+  height: 100%;             /* Bild passt sich der Höhe an */
+  width: auto;              /* behält Seitenverhältnis */
+  object-fit: cover;        /* falls nötig, füllt schön */
+}
+
+/* Hover-Effekt für Expansion */
+.slice:hover {
+  width: 150px;             /* aufgeklappt */
+}
+
+.hover-text {
+  display: none;         /* alle Texte sind standardmäßig unsichtbar */
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+.hover-text.active {
+  display: block;        /* sichtbar, wenn "active" Klasse gesetzt */
+}
 
 
 
@@ -520,27 +542,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	   height: 320px;
     }
 }
-
-@media (max-width: 991px){
-	.blocs-card-width{
-		width:50%;
-	}
-	
-}
-
-@media (max-width: 767px){
-	.blocs-card-width{
-		width:50%;
-	}
-	
-}
-
 @media (max-width: 575px){
 	.navbar-logo{
 		font-size:18px;
 	}
-	.blocs-card-width{
-		width:100%;
+	.footer-link{
+		text-align:center;
 	}
 	
 }
