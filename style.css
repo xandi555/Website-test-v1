@@ -195,6 +195,11 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 }
 
 
+/* Image Scale */
+.img-fluid-up{
+	min-width: 100%;
+	height: auto;
+}
 
 
 
@@ -294,8 +299,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .img-style{
 	border-radius:0px 0px 0px 0px;
-	height:500px;
-	width:400px;
+	width:698px;
+	height:700px;
 }
 .p-style{
 	font-size:11px;
@@ -372,6 +377,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .img-bloc-6-style{
 	height:400px;
+}
+.no-left{
+	padding-left:10px;
+}
+.img-sa-gr-1-200-2--style{
+	height:237px;
 }
 
 /* = Colour
@@ -452,6 +463,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .hover-text.active {
   display: block;        /* sichtbar, wenn "active" Klasse gesetzt */
+}
+
+svg {
+  width: 100%;
+  height: auto;
 }
 
 
