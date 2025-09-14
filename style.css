@@ -103,6 +103,12 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	border-color:rgba(0,0,0,.3);
 }
 
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
+
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -177,14 +183,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	background:rgba(0,0,0,.3);
 }
 
-.btn-wire{
-	background:transparent!important;
-	border:2px solid transparent;
-}
-.btn-wire:hover{
-	background:transparent!important;
-	border:2px solid transparent;
-}
 .a-block{
 	width:100%;
 	text-align:left;
@@ -244,6 +242,10 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	stroke-width: 2px;
 	fill-rule: evenodd;
 	stroke-linecap:round;
+}
+
+.hide-indicators{
+	display:none;
 }
 
 .carousel-indicators li::marker{
@@ -383,6 +385,19 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .img-sa-gr-1-200-2--style{
 	height:237px;
+}
+.extra-slim-row{
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:250px;
+	padding-right:250px;
+}
+.img-bloc-41-style{
+	height:782px;
+	width:500px;
+}
+.p-bloc-47-style{
+	font-size:27px;
 }
 
 /* = Colour
